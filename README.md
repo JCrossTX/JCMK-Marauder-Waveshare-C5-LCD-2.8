@@ -1,3 +1,5 @@
+Loaded another fork for this device from EvilPete but GPS wasn't working on UART as it was on i2c and serial so in the process of changing that I kinda went back to the drawing board towards upstream master. Verify your GPS module connector pinout as the Waveshare device UART connector is setup GND 3V3 TX RX and this does not match most off-the-shelf QWIIC/STEMMA QT GNSS device pinouts. As always connect GND-GND 3V3-3V3 (VCC) TX-RX RX-TX. This fork defaults to poll GPS at boot but can be toggled in device settings.
+
 <!---[![License: MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/justcallmekoko/ESP32Marauder/blob/master/LICENSE)--->
 <!---[![Gitter](https://badges.gitter.im/justcallmekoko/ESP32Marauder.png)](https://gitter.im/justcallmekoko/ESP32Marauder)--->
 <!---[![Build Status](https://travis-ci.com/justcallmekoko/ESP32Marauder.svg?branch=master)](https://travis-ci.com/justcallmekoko/ESP32Marauder)--->
